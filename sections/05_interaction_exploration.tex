@@ -2,156 +2,35 @@
 
 \begin{document}
 
-\subsection{Interaction and Exploration in the Story}
+\subsection{Interaction as Policy Exploration}
 \label{subsec:interaction-exploration-story}
 
-The Vietnam Financial Inclusion Dashboard 2025 is not only a fixed visual
-report. It also functions as an \textbf{exploratory policy workspace} that lets
-users move from national indicators to subgroup-level questions. This matters
-because financial inclusion can vary by location, gender, income, education,
-and workforce status. The dashboard therefore supports a movement from broad
-summary evidence to more targeted policy investigation.
+The chapter's policy argument is strengthened by interaction because the
+dashboard does not force the reader to stop at the national averages used in
+the narrative. Page 3 begins with Banking Inclusion at \(74.93\%\), Financial
+Institution Account ownership at \(74.05\%\), Mobile Money Account ownership at
+\(46.69\%\), and Digital Account ownership at \(67.03\%\), then gives the user
+filters for Urbanicity, Income Group, Gender, Education Level, and In
+Workforce. Page 5 does something similar from a resilience baseline of
+\(73.05\%\) saved and \(45.98\%\) borrowed, using filters for Location, Gender,
+and In Workforce to move the reader from national averages into subgroup
+patterns.
 
-The interaction logic can be summarized as follows:
+\dashboardfigure{0.86}{fig-page5-filter-bar.png}
+{Filter controls on the Financial Health \& Resilience page.}
+{fig:page5-filter-bar}
 
-\begin{center}
-\textbf{National overview \(\rightarrow\) subgroup filtering \(\rightarrow\) comparison \(\rightarrow\) diagnostic interpretation}
-\end{center}
+This interaction design matters because the chapter's most important claims are
+distributional. The national story says that digital activation is weaker than
+connectivity, that account access is broader than digital usage, and that
+resilience differs across social groups. The filters on Page 3 and Page 5 make
+those claims investigable instead of merely rhetorical. At the same time, the
+available source is still a static PDF export, so the report should only claim
+that the dashboard is \emph{designed for} subgroup exploration, not that every
+filtered result has been directly tested from the exported file.
 
-The clearest interactive elements appear on Page 3, \textit{The Account
-Ownership \& Access Landscape}, and Page 5, \textit{Financial Health \&
-Resilience}. Page 3 provides slicers for \textit{Urbanicity}, \textit{Income
-Group}, \textit{Gender}, \textit{Education Level}, and \textit{In Workforce}.
-Page 5 provides slicers for \textit{Location}, \textit{Gender}, and
-\textit{In Workforce}. In the exported PDF, these filters appear in the default
-\textit{All} state, so the report can confirm their presence and placement even
-though live filtered states cannot be tested from the static file.
-
-\noindent\textit{See Figures~\ref{fig:page3-filter-bar} and
+\noindent\textit{See Figures~\ref{fig:page3-filter-bar},
+\ref{fig:page5-filter-bar}, \ref{fig:page3-interaction-states}, and
 \ref{fig:page5-resilience-overview}.}
-
-\subsubsection{From Overview to Subgroup Exploration}
-\label{subsubsec:overview-to-subgroup-exploration}
-
-A central interaction principle is the movement from national overview to
-filtered exploration. Page 3 first gives users a national account-access
-baseline: Banking Inclusion is \(74.93\%\), Financial Institution Account
-ownership is \(74.05\%\), Mobile Money Account ownership is \(46.69\%\), and
-Digital Account ownership is \(67.03\%\). The slicers placed near these KPI
-cards then allow the same account-access story to be examined through different
-population lenses.
-
-This design is important because a national average can hide structural gaps. A
-headline Banking Inclusion rate of \(74.93\%\) is useful as an overview, but it
-does not show which groups may be less included. The filters therefore extend
-the dashboard story from a single national statement into a set of subgroup
-questions: Which groups are included, which groups remain excluded, and whether
-the barriers differ across social categories.
-
-\noindent\textit{See Figures~\ref{fig:account-kpi-cards} and
-\ref{fig:page3-filter-bar}.}
-
-\subsubsection{Exploration Through Comparison and Hypothesis Testing}
-\label{subsubsec:comparison-hypothesis-testing}
-
-The dashboard also supports exploration by structuring many visuals as
-comparisons. Page 3 compares account channels: Financial Institution Account
-ownership is \(74.05\%\), while Mobile Money Account ownership is \(46.69\%\).
-This \(27.36\)-percentage-point gap suggests that traditional financial
-institution accounts remain more widespread than mobile money.
-
-Page 4 extends comparison to usage behavior. Urban Merchant Payments reach
-\(65.79\%\), compared with \(50.30\%\) in rural areas. Urban In-Store Digital
-Pay reaches \(62.67\%\), compared with \(46.11\%\) in rural areas. The same
-page also compares financial inflow channels: Corporate/Formal Wages are mostly
-digital, with \(80.99\%\) delivered directly to an account, while Agricultural
-Sales remain heavily cash-based, with \(73.42\%\) cash-only.
-
-These comparisons allow users to test policy hypotheses. For example, Page 2
-supports the hypothesis that digital access is high but activation is weaker:
-Internet Use in the last three months is \(87.85\%\), Foundational ID coverage
-is \(99.65\%\), but Active Digital ID Verification is only \(32.68\%\). Page 4
-supports the hypothesis that account ownership does not automatically become
-digital cash-flow usage. Page 5 supports the hypothesis that resilience differs
-by income group: the Poorest 20\% rely on Family \& Friends at 86 and Formal
-Savings at 30, while the Richest 20\% show Formal Savings at 60 and Family \&
-Friends at 34.
-
-\begin{table}[htbp]
-\centering
-\small
-\caption{Examples of exploratory questions supported by the dashboard}
-\label{tab:interaction-exploratory-questions}
-\begin{tabular}{p{0.30\textwidth}p{0.34\textwidth}p{0.26\textwidth}}
-\hline
-\textbf{Exploratory question} & \textbf{Dashboard evidence} & \textbf{Interpretation} \\
-\hline
-Does access become activation? & Online Digital ID \(71.19\%\); Active Digital ID Verification \(32.68\%\). & Digital access is not fully converted into active use. \\
-\hline
-Does account ownership become digital usage? & Banking Inclusion \(74.93\%\); Agricultural Sales cash-only \(73.42\%\). & Account access and cash-flow digitization must be evaluated separately. \\
-\hline
-Does resilience differ by income group? & Poorest 20\%: Family \& Friends 86, Formal Savings 30; Richest 20\%: Formal Savings 60, Family \& Friends 34. & Poorer groups rely more on informal support. \\
-\hline
-\end{tabular}
-\end{table}
-
-\noindent\textit{See Figures~\ref{fig:page2-readiness-overview},
-\ref{fig:account-kpi-cards}, \ref{fig:national-inflows},
-\ref{fig:page4-digital-merchant-payments}, and
-\ref{fig:page5-coping-income-group}.}
-
-\subsubsection{Limits of the Static Export}
-\label{subsubsec:static-export-limits}
-
-Because the available dashboard is a static PDF export, the interaction
-analysis should avoid overstating what can be directly tested. The PDF confirms
-that slicers exist, where they are placed, and that the default state is
-generally \textit{All}. It also confirms that the visual design supports
-comparison across groups, channels, and payment methods.
-
-However, the PDF does not allow the analyst to click filters, inspect hover
-tooltips, or observe the exact recalculation of KPI cards and charts after each
-selection. Therefore, the report should describe the dashboard as
-\textit{designed for} subgroup exploration rather than claiming exact
-filtered-state values that are not visible in the exported file.
-
-\noindent\textit{See Figures~\ref{fig:page3-interaction-states} and
-\ref{fig:page5-resilience-overview}.}
-
-\subsubsection{Summary of Interaction and Exploration}
-\label{subsubsec:interaction-exploration-summary}
-
-Interaction plays three main roles in the dashboard story. First, it enables
-\textbf{personalization of insight} by allowing users to focus on relevant
-population groups. Second, it supports \textbf{comparison across segments},
-such as urban versus rural users, financial institution accounts versus mobile
-money, and cash versus digital delivery. Third, it supports
-\textbf{hypothesis testing} by helping users examine whether access becomes
-activation, whether account ownership becomes usage, and whether inclusion
-connects to resilience.
-
-\begin{table}[htbp]
-\centering
-\small
-\caption{Summary of interaction roles in the dashboard story}
-\label{tab:interaction-summary}
-\begin{tabular}{p{0.27\textwidth}p{0.34\textwidth}p{0.29\textwidth}}
-\hline
-\textbf{Interaction role} & \textbf{Dashboard evidence} & \textbf{Storytelling contribution} \\
-\hline
-Personalization of insight & Page 3 filters: Urbanicity, Income Group, Gender, Education Level, In Workforce; Page 5 filters: Location, Gender, In Workforce. & Users can move beyond national averages. \\
-\hline
-Comparison across segments & Financial Institution Account \(74.05\%\) versus Mobile Money Account \(46.69\%\); Urban Merchant Payments \(65.79\%\) versus Rural Merchant Payments \(50.30\%\). & Users can identify where gaps are located. \\
-\hline
-Hypothesis testing & Active Digital ID Verification \(32.68\%\); Agricultural Sales cash-only \(73.42\%\); Poorest 20\% Family \& Friends 86 versus Formal Savings 30. & Users can test whether access becomes activation, usage, and resilience. \\
-\hline
-\end{tabular}
-\end{table}
-
-Overall, interaction and exploration make the dashboard more than a fixed
-visual summary. Its filters and comparative visuals allow users to move between
-national evidence and subgroup-level policy questions. This strengthens the
-dashboard's role as an evidence-based policy workspace for diagnosing financial
-inclusion, digital usage, cash dependency, and resilience in Vietnam.
 
 \end{document}

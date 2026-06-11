@@ -15,41 +15,24 @@
 \contentsline {subsection}{\numberline {5.3}Notes / Adjustments}{10}{subsection.5.3}%
 \contentsline {section}{\numberline {6}Chapter 4: Chart Types for Amounts, Distributions, Proportions, Relationships, and Trends}{10}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Techniques / Principles Applied}{10}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}How Applied in the Dashboard}{11}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Notes / Adjustments}{12}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.2}How Applied in the Dashboard}{10}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Notes / Adjustments}{11}{subsection.6.3}%
 \contentsline {section}{\numberline {7}Chapter 6: Visual Integrity (Ink, Overlap, Color, Layout, and Annotation)}{12}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Techniques / Principles Applied}{12}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}How Applied in the Dashboard}{13}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Notes / Adjustments}{14}{subsection.7.3}%
-\contentsline {section}{\numberline {8}Chapter 8: Interaction Techniques}{14}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Techniques / Principles Applied}{14}{subsection.8.1}%
+\contentsline {subsection}{\numberline {7.2}How Applied in the Dashboard}{12}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Notes / Adjustments}{13}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Chapter 8: Interaction Techniques}{13}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Techniques / Principles Applied}{13}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}How Applied in the Dashboard}{14}{subsection.8.2}%
 \contentsline {subsection}{\numberline {8.3}Notes / Adjustments}{15}{subsection.8.3}%
 \contentsline {section}{\numberline {9}Chapter 9: Storytelling and Presentation Narrative}{15}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Dashboard Purpose and Storytelling Lens}{16}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Narrative Walkthrough of the Dashboard}{16}{subsection.9.2}%
-\contentsline {subsubsection}{\numberline {9.2.1}Page 1: Establishing the Socioeconomic Context}{16}{subsubsection.9.2.1}%
-\contentsline {subsubsection}{\numberline {9.2.2}Page 2: Diagnosing Digital Readiness}{17}{subsubsection.9.2.2}%
-\contentsline {subsubsection}{\numberline {9.2.3}Page 3: Identifying Account Access and Exclusion}{17}{subsubsection.9.2.3}%
-\contentsline {subsubsection}{\numberline {9.2.4}Page 4: Moving from Access to Cash-Flow Usage}{18}{subsubsection.9.2.4}%
-\contentsline {subsubsection}{\numberline {9.2.5}Page 5: Evaluating Financial Health and Resilience}{19}{subsubsection.9.2.5}%
-\contentsline {subsection}{\numberline {9.3}Bridge to the Storytelling Analysis}{20}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Story Structure}{21}{subsection.9.4}%
-\contentsline {subsubsection}{\numberline {9.4.1}Narrative Spine}{21}{subsubsection.9.4.1}%
-\contentsline {subsubsection}{\numberline {9.4.2}Transition Logic}{22}{subsubsection.9.4.2}%
-\contentsline {subsection}{\numberline {9.5}Storytelling Principles}{23}{subsection.9.5}%
-\contentsline {subsubsection}{\numberline {9.5.1}Overview First and Progressive Disclosure}{23}{subsubsection.9.5.1}%
-\contentsline {subsubsection}{\numberline {9.5.2}Segmentation and Comparison}{23}{subsubsection.9.5.2}%
-\contentsline {subsubsection}{\numberline {9.5.3}Gap Analysis and Diagnostic Framing}{24}{subsubsection.9.5.3}%
-\contentsline {subsubsection}{\numberline {9.5.4}Access-to-Usage and Outcome-Oriented Storytelling}{24}{subsubsection.9.5.4}%
-\contentsline {subsubsection}{\numberline {9.5.5}Summary of Storytelling Principles}{24}{subsubsection.9.5.5}%
-\contentsline {subsection}{\numberline {9.6}Narrative Style}{25}{subsection.9.6}%
-\contentsline {subsubsection}{\numberline {9.6.1}Evidence-Based and Diagnostic Tone}{25}{subsubsection.9.6.1}%
-\contentsline {subsubsection}{\numberline {9.6.2}Comparative Policy Narrative}{26}{subsubsection.9.6.2}%
-\contentsline {subsubsection}{\numberline {9.6.3}Policy-Oriented and Outcome-Oriented Ending}{27}{subsubsection.9.6.3}%
-\contentsline {subsubsection}{\numberline {9.6.4}Summary of Narrative Style}{27}{subsubsection.9.6.4}%
-\contentsline {subsection}{\numberline {9.7}Interaction and Exploration in the Story}{28}{subsection.9.7}%
-\contentsline {subsubsection}{\numberline {9.7.1}From Overview to Subgroup Exploration}{28}{subsubsection.9.7.1}%
-\contentsline {subsubsection}{\numberline {9.7.2}Exploration Through Comparison and Hypothesis Testing}{28}{subsubsection.9.7.2}%
-\contentsline {subsubsection}{\numberline {9.7.3}Limits of the Static Export}{29}{subsubsection.9.7.3}%
-\contentsline {subsubsection}{\numberline {9.7.4}Summary of Interaction and Exploration}{30}{subsubsection.9.7.4}%
+\contentsline {subsection}{\numberline {9.1}The Core Policy Story}{15}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Page 1: Establishing the Structural Baseline}{16}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}Page 2: Readiness Exists, but Activation Is Weaker}{16}{subsubsection.9.1.2}%
+\contentsline {subsubsection}{\numberline {9.1.3}Page 3: Access Is Broad, but Not Even}{17}{subsubsection.9.1.3}%
+\contentsline {subsubsection}{\numberline {9.1.4}Page 4: Access Does Not Guarantee Digital Usage}{18}{subsubsection.9.1.4}%
+\contentsline {subsubsection}{\numberline {9.1.5}Page 5: The Real Test Is Resilience Under Stress}{19}{subsubsection.9.1.5}%
+\contentsline {subsection}{\numberline {9.2}Why the Sequence Persuades}{21}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}How the Evidence Builds the Argument}{21}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Narrative Style and Claim Discipline}{21}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Interaction as Policy Exploration}{22}{subsection.9.5}%
