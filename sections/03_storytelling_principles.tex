@@ -1,0 +1,150 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\subsection{Storytelling Principles}
+\label{subsec:storytelling-principles}
+
+After defining the dashboard's story structure, this subsection explains the
+main storytelling principles that make the visual sequence readable and
+policy-oriented. Instead of describing every chart separately, the analysis
+focuses on how the dashboard uses overview-first design, progressive
+disclosure, segmentation, comparison, gap analysis, diagnostic framing, and
+outcome-oriented storytelling to turn weighted survey indicators into a
+coherent financial inclusion narrative.
+
+\subsubsection{Overview First and Progressive Disclosure}
+\label{subsubsec:overview-progressive-disclosure}
+
+The dashboard first gives users high-level anchors before moving into detailed
+subgroup evidence. This follows the overview-first principle: national KPI
+cards establish the baseline, while later charts provide breakdowns and
+explanations. For example, Page 1 introduces the population context with Urban
+Concentration Rate at \(30.33\%\), Secondary Education Threshold Rate at
+\(89.98\%\), and In Workforce Rate at \(87.92\%\). Page 3 applies the same
+logic to account access, with Banking Inclusion at \(74.93\%\), Financial
+Institution Account at \(74.05\%\), Mobile Money Account at \(46.69\%\), and
+Digital Account at \(67.03\%\). Page 5 then gives outcome-level anchors:
+\(73.05\%\) saved and \(45.98\%\) borrowed.
+
+The dashboard also uses progressive disclosure. It does not show financial
+inclusion as one final number. Instead, it reveals the story in layers:
+
+\begin{center}
+\textbf{Context \(\rightarrow\) Readiness \(\rightarrow\) Access \(\rightarrow\) Usage \(\rightarrow\) Resilience}
+\end{center}
+
+This sequence prevents premature conclusions. For instance, Page 2 shows strong
+basic readiness, with Internet Use in the last three months at \(87.85\%\) and
+Foundational ID coverage at \(99.65\%\). However, Active Digital ID
+Verification is only \(32.68\%\), showing that digital access does not
+automatically become active digital participation. Similarly, the
+account-access indicators on Page 3 are later tested against cash-flow behavior
+on Page 4.
+
+\noindent\textit{See Figures~\ref{fig:dashboard-overview},
+\ref{fig:page2-readiness-overview}, \ref{fig:account-kpi-cards},
+\ref{fig:national-inflows}, and \ref{fig:page5-resilience-overview}.}
+
+\subsubsection{Segmentation and Comparison}
+\label{subsubsec:segmentation-comparison}
+
+The dashboard avoids relying only on national averages by repeatedly
+segmenting the evidence by income group, education, gender, location, and
+workforce status. This is important because financial inclusion is a
+distributional issue. Page 1 shows this clearly through the Socioeconomic
+Matrix. In the Poorest 20\% group, only 6 respondents have tertiary education
+or more, compared with 72 in the Richest 20\% group. This contrast prepares the
+reader to interpret later financial gaps as part of a broader socioeconomic
+pattern.
+
+Comparison is also used to make gaps visible. On Page 3, Financial Institution
+Account ownership is \(74.05\%\), while Mobile Money Account ownership is
+\(46.69\%\), a gap of 27.36 percentage points. On Page 4, Urban Merchant
+Payments reach \(65.79\%\), compared with \(50.30\%\) in rural areas. Urban
+In-Store Digital Pay is \(62.67\%\), compared with \(46.11\%\) in rural areas.
+These comparisons turn individual values into interpretable policy differences.
+
+\noindent\textit{See Figures~\ref{fig:socioeconomic-matrix},
+\ref{fig:account-kpi-cards}, and \ref{fig:page4-digital-merchant-payments}.}
+
+\subsubsection{Gap Analysis and Diagnostic Framing}
+\label{subsubsec:gap-diagnostic-framing}
+
+Gap analysis is one of the dashboard's strongest storytelling principles. It
+helps distinguish basic access from meaningful activation. Page 2 shows that
+Foundational ID coverage is \(99.65\%\), Online Digital ID is \(71.19\%\), and
+Active Digital ID Verification is only \(32.68\%\). The gap between Online
+Digital ID and Active Digital ID Verification is therefore 38.51 percentage
+points. This creates a clear access-versus-activation story.
+
+The same diagnostic logic appears on Page 3 through the Exclusion Friction Log.
+Instead of only reporting who is unbanked, the dashboard decomposes exclusion
+into possible barriers such as Family Member Has One, Not Enough Money, Too Far
+Away, Too Expensive, Lack of Trust, and Lack of Documentation. Because the PDF
+export does not show exact labels for every barrier, this report treats the
+visual as a diagnostic framework rather than assigning exact percentages to
+each barrier.
+
+\noindent\textit{See Figures~\ref{fig:page2-id-coverage},
+\ref{fig:page2-active-digital-id}, and \ref{fig:exclusion-friction-log}.}
+
+\subsubsection{Access-to-Usage and Outcome-Oriented Storytelling}
+\label{subsubsec:access-usage-outcome-storytelling}
+
+The dashboard does not equate account ownership with complete financial
+inclusion. Page 3 shows relatively high access, with Banking Inclusion at
+\(74.93\%\) and Digital Account ownership at \(67.03\%\). However, Page 4 asks
+whether financial flows are actually digital. The contrast is important:
+Corporate/Formal Wages are \(80.99\%\) digital direct-to-account, while
+Agricultural Sales are \(73.42\%\) cash-only. Government
+Subsidies/Transfers also remain more cash-oriented, with \(56.96\%\) cash-only.
+
+The final page makes the story outcome-oriented. Page 5 moves from access and
+usage to financial health and resilience. It reports that \(73.05\%\) of
+respondents saved, while \(45.98\%\) borrowed. The coping table then shows that
+the Poorest 20\% group relies more on Family \& Friends at 86 than on Formal
+Savings at 30. In contrast, the Richest 20\% group records Formal Savings at 60
+and Family \& Friends at 34. This ending shows that financial inclusion should
+be evaluated not only by access, but also by resilience outcomes.
+
+\noindent\textit{See Figures~\ref{fig:account-kpi-cards},
+\ref{fig:national-inflows}, and \ref{fig:page5-coping-income-group}.}
+
+\subsubsection{Summary of Storytelling Principles}
+\label{subsubsec:storytelling-principles-summary}
+
+Table~\ref{tab:storytelling-principles-summary} summarizes the principles used
+by the dashboard and the evidence supporting each one.
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{p{0.24\linewidth}p{0.34\linewidth}p{0.32\linewidth}}
+\hline
+\textbf{Principle} & \textbf{Dashboard evidence} & \textbf{Storytelling function} \\
+\hline
+Overview first & KPI cards on Pages 1, 3, and 5 & Provides national baselines before detailed analysis \\
+\hline
+Progressive disclosure & Context \(\rightarrow\) Readiness \(\rightarrow\) Access \(\rightarrow\) Usage \(\rightarrow\) Resilience & Reveals financial inclusion as a multi-stage journey \\
+\hline
+Segmentation and comparison & Income--education matrix; account ownership gap; urban--rural payment gap & Makes inequality and group differences visible \\
+\hline
+Gap analysis and diagnosis & Active Digital ID Verification = \(32.68\%\); Exclusion Friction Log & Distinguishes access from activation and identifies barriers \\
+\hline
+Access-to-usage reasoning & Banking Inclusion = \(74.93\%\); Agricultural Sales cash-only = \(73.42\%\) & Shows that account ownership does not guarantee digital usage \\
+\hline
+Outcome orientation & Saved = \(73.05\%\); Borrowed = \(45.98\%\); coping table by income group & Connects inclusion to financial health and resilience \\
+\hline
+\end{tabular}
+\caption{Summary of storytelling principles and supporting dashboard evidence.}
+\label{tab:storytelling-principles-summary}
+\end{table}
+
+Overall, these storytelling principles turn the dashboard from a descriptive
+set of charts into a structured analytical narrative. The user first receives a
+national overview, then moves through segmentation, comparison, gap diagnosis,
+usage analysis, and resilience outcomes. This makes the dashboard suitable for
+policy interpretation rather than simple statistical reporting.
+
+\end{document}

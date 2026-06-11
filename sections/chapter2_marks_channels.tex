@@ -1,0 +1,94 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\section{Chapter 2: Data Types, Marks, and Channels}
+\label{sec:chapter2-marks-channels}
+
+\subsection{Techniques / Principles Applied}
+
+\begin{itemize}[leftmargin=*]
+\item Classifying variables as nominal, ordinal, or quantitative before
+encoding them.
+\item Selecting marks that fit the analytical task: cells, bars, flows, and
+lines.
+\item Prioritizing precise channels such as aligned position and length for the
+most important quantitative comparisons.
+\item Using color, width, and enclosure as supporting channels rather than the
+primary source of exact comparison.
+\end{itemize}
+
+\subsection{How Applied in the Dashboard}
+
+The dashboard aligns each page with the variable types and comparison task it
+needs to support. Table~\ref{tab:marks-channels-summary} summarizes the main
+encodings used across the five pages.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{p{0.16\textwidth}p{0.23\textwidth}p{0.24\textwidth}X}
+\toprule
+\textbf{Chart/Page} & \textbf{Variables} & \textbf{Marks / channels} & \textbf{Why appropriate} \\
+\midrule
+Page 1 socioeconomic matrix & Income quintile, education, survey weight & Grid cells; row and column position; sequential color intensity & Two ordered categorical variables form a discrete matrix, while weighted population density is conveyed by ordered color. \\
+Page 2 mobile ownership profile & Location, gender, income group, phone type, access rate & Bars; aligned length; grouped position; hue & Bar length supports accurate rate comparison across small multiples and hue separates phone types without changing the baseline. \\
+Page 3 account composition flow & Location, account state, weighted volume & Sankey nodes and ribbons; horizontal position; ribbon width; color grouping & The chart emphasizes how groups move between account states, which is more important here than exact pairwise magnitude reading. \\
+Page 4 inflow digitization & Inflow type, payment modality, percentage share & Segmented bars; aligned position; segment length; hue & A 100\% stacked bar makes composition comparable across wages, agriculture, transfers, and other inflows. \\
+Page 5 save vs. borrow trajectories & Income group, income runway, save rate, borrow rate & Lines; vertical position; color & The line overlays help readers track directional change across ordered categories. \\
+\bottomrule
+\end{tabularx}
+\caption{Main marks, channels, and encoding rationale used in the dashboard.}
+\label{tab:marks-channels-summary}
+\end{table}
+
+\dashboardfigure{0.72}{fig-page1-socioeconomic-matrix.png}
+{The socioeconomic matrix (income vs. education).}
+{fig:socioeconomic-matrix}
+
+\dashboardfigure{0.82}{fig-page2-mobile-ownership.png}
+{Mobile ownership rate by location, phone type, gender, and income group.}
+{fig:mobile-ownership-profile}
+
+\dashboardfigure{0.72}{fig-page3-account-flow.png}
+{The account composition flow.}
+{fig:account-composition-flow}
+
+\dashboardfigure{0.88}{fig-page4-inflows.png}
+{The national digitization of financial inflows: cash vs. digital delivery.}
+{fig:national-inflows}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig-page5-save-borrow-income-group.png}
+        \caption{By income group.}
+        \label{fig:save-borrow-income-group}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig-page5-save-borrow-income-runway.png}
+        \caption{By income runway length.}
+        \label{fig:save-borrow-income-runway}
+    \end{subfigure}
+    \caption{Save vs. borrow percentage overlays.}
+    \label{fig:save-borrow-trajectories}
+\end{figure}
+
+These examples show the dashboard's encoding logic in practice: Page 1 uses a
+matrix to compare ordered categories, Page 2 uses small-multiples bars for
+precise subgroup comparisons, Page 3 uses a Sankey to emphasize structural
+flows, Page 4 uses segmented bars for composition, and Page 5 uses line
+overlays to highlight directional change across ordered groups.
+
+\subsection{Notes / Adjustments}
+
+The Sankey on Page 3 sacrifices some magnitude precision because ribbon width is
+less exact than bar length, but it better communicates movement between account
+states. On Page 5, the line overlays connect ordinal categories, so they imply
+continuity more than a strict categorical display would; the choice is kept to
+make change in save-versus-borrow behavior easier to track.
+
+\end{document}

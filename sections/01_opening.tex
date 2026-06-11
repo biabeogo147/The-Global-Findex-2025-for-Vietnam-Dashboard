@@ -1,0 +1,198 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\section{Chapter 9: Storytelling and Presentation Narrative}
+\label{sec:data-storytelling-design-opening}
+
+This section analyzes the Vietnam Financial Inclusion Dashboard 2025 as a data
+story rather than as a collection of independent Power BI visuals. Since the
+dataset and sampling background have already been discussed in the previous
+sections, this chapter focuses on how the dashboard transforms weighted survey
+evidence into a policy-oriented narrative about financial inclusion, digital
+readiness, account access, cash-flow usage, and financial resilience in
+Vietnam.
+
+\dashboardxref{fig:dashboard-overview}
+
+\subsection{Dashboard Purpose and Storytelling Lens}
+\label{subsec:dashboard-purpose-storytelling-lens}
+
+Within the established data context, the dashboard functions as an institutional
+policy workspace. It does not only report whether adults have financial
+accounts; it also asks whether people are digitally ready, whether account
+ownership becomes actual financial usage, and whether financial participation is
+connected to saving, borrowing, and resilience outcomes. For this reason, the
+dashboard is best read as a sequential policy story rather than as a set of
+disconnected descriptive charts.
+
+The organizing logic of the dashboard can be summarized as:
+
+\begin{center}
+\textbf{Context \(\rightarrow\) Readiness \(\rightarrow\) Access \(\rightarrow\) Usage \(\rightarrow\) Resilience}
+\end{center}
+
+This structure is important because financial inclusion is not a single-step
+condition. Digital access does not always lead to active digital verification;
+account ownership does not always lead to digital cash-flow usage; and
+financial participation does not automatically guarantee resilience during
+financial shocks. The dashboard therefore guides the reader through a
+multi-stage diagnosis.
+
+\storyroadmapfigure{fig:story-roadmap}
+
+\subsection{Narrative Walkthrough of the Dashboard}
+\label{subsec:narrative-walkthrough}
+
+Before examining the formal storytelling dimensions, this walkthrough briefly
+shows how each dashboard page contributes to the overall story.
+
+\subsubsection{Page 1: Establishing the Socioeconomic Context}
+\label{subsubsec:page1-context}
+
+Page 1 acts as the exposition of the story by defining who is being analyzed
+before introducing financial indicators. The KPI cards show an Urban
+Concentration Rate of 30.33\%, a Secondary Education Threshold Rate of 89.98\%,
+and an In Workforce Rate of 87.92\%. These values establish the demographic and
+socioeconomic baseline for the later financial inclusion analysis.
+
+The strongest visual evidence on this page is the socioeconomic matrix. The
+Poorest 20\% group has only 6 respondents with tertiary education or more,
+while the Richest 20\% group has 72. This contrast frames financial inclusion
+as a socially structured issue shaped by income, education, location, and
+workforce participation.
+
+\dashboardxref{fig:socioeconomic-matrix}
+
+\subsubsection{Page 2: Diagnosing Digital Readiness}
+\label{subsubsec:page2-readiness}
+
+Page 2 shifts the story from population context to digital readiness. Internet
+Use in the last three months is 87.85\%, and Internet Use in the last seven
+days is 85.39\%, suggesting that internet access is frequent rather than
+occasional. However, the central insight is the gap between digital access and
+digital activation: Foundational ID coverage reaches 99.65\%, Online Digital ID
+reaches 71.19\%, but Active Digital ID Verification is only 32.68\%.
+
+This page therefore shows that digital infrastructure alone is not enough.
+Although many adults are connected and identifiable, far fewer actively use
+digital verification. This gap becomes an important bridge between basic
+readiness and meaningful digital financial participation.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.31\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig-page2-connectivity-depth.png}
+        \caption{Connectivity depth: 3M vs. 7D.}
+        \label{fig:page2-connectivity-depth}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.31\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig-page2-digital-vs-foundational-id.png}
+        \caption{Digital vs. foundational ID coverage.}
+        \label{fig:page2-id-coverage}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.31\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig-page2-active-digital-id.png}
+        \caption{Active digital ID verification rate.}
+        \label{fig:page2-active-digital-id}
+    \end{subfigure}
+    \caption{Page 2 readiness evidence used in the storytelling analysis.}
+    \label{fig:page2-readiness-overview}
+\end{figure}
+
+\subsubsection{Page 3: Identifying Account Access and Exclusion}
+\label{subsubsec:page3-access}
+
+Page 3 is the central diagnostic layer of the dashboard. It moves from digital
+readiness to direct financial access. The KPI cards report Banking Inclusion at
+74.93\%, Financial Institution Account at 74.05\%, Mobile Money Account at
+46.69\%, and Digital Account at 67.03\%. The 27.36 percentage-point gap between
+financial institution accounts and mobile money accounts suggests that
+traditional accounts remain more widespread than mobile money.
+
+The page also turns access into an exclusion diagnosis. Its filters allow users
+to segment the story by Urbanicity, Gender, Workforce Status, Education Level,
+and Income Group. Meanwhile, the Exclusion Friction Log identifies barriers such
+as not enough money, distance, fees, lack of trust, and lack of documentation.
+As a result, Page 3 does not only ask how many people are included; it also
+asks who remains excluded and why.
+
+\dashboardfigure{0.82}{fig-page3-income-gender.png}
+{Banking inclusion by income group and gender.}
+{fig:page3-income-gender}
+
+\noindent\textit{See also Figures~\ref{fig:account-kpi-cards},
+\ref{fig:page3-filter-bar}, \ref{fig:account-composition-flow}, and
+\ref{fig:exclusion-friction-log}.}
+
+\subsubsection{Page 4: Moving from Access to Cash-Flow Usage}
+\label{subsubsec:page4-usage}
+
+Page 4 prevents the story from stopping at account ownership. It asks whether
+financial flows are actually delivered through digital channels or still depend
+on cash. Corporate/Formal Wages are largely digital, with 80.99\% delivered
+directly to an account and 18.60\% cash-only. In contrast, Agricultural Sales
+remain cash-dependent, with 73.42\% cash-only and only 25.79\% delivered
+digitally to an account.
+
+The page also reveals a geographic usage gap. Urban Merchant Payments reach
+65.79\%, compared with 50.30\% in rural areas; Urban In-Store Digital Pay
+reaches 62.67\%, compared with 46.11\% in rural areas. These comparisons show
+that financial inclusion must be evaluated through actual transaction behavior,
+not only through account ownership.
+
+\dashboardfigure{0.56}{fig-page4-digital-merchant-payments.png}
+{Digital merchant and in-store payment by geography.}
+{fig:page4-digital-merchant-payments}
+
+\dashboardxref{fig:national-inflows}
+
+\subsubsection{Page 5: Evaluating Financial Health and Resilience}
+\label{subsubsec:page5-resilience}
+
+The final page connects financial participation to financial health and
+resilience. The KPI cards show that 73.05\% of respondents saved, while 45.98\%
+borrowed. This shifts the dashboard from access and usage toward financial
+outcomes.
+
+The resilience tables provide the strongest evidence for this final stage. For
+the Poorest 20\% group, Family \& Friends is 86 while Formal Savings is only
+30. For the Richest 20\% group, Formal Savings is 60 while Family \& Friends is
+34. This contrast suggests that poorer groups depend more heavily on informal
+support, while richer groups are more connected to formal savings channels.
+
+\dashboardfigure{0.92}{fig-page5-resilience-overview.png}
+{Financial Health \& Resilience page overview.}
+{fig:page5-resilience-overview}
+
+\dashboardfigure{0.68}{fig-page5-coping-income-group.png}
+{Coping channels by income group.}
+{fig:page5-coping-income-group}
+
+\subsection{Bridge to the Storytelling Analysis}
+\label{subsec:bridge-to-storytelling-analysis}
+
+Together, the five pages form a clear policy narrative. Page 1 establishes the
+population context, Page 2 tests digital readiness, Page 3 diagnoses account
+access and exclusion, Page 4 examines cash-flow usage, and Page 5 evaluates
+financial health and resilience. This order prevents financial inclusion from
+being reduced to a single account ownership metric.
+
+The remainder of this chapter analyzes the dashboard through four storytelling
+dimensions:
+
+\begin{enumerate}
+\item \textbf{Story structure}: how the dashboard organizes the narrative from context to resilience.
+\item \textbf{Storytelling principles}: how overview-first design, segmentation, comparison, gap analysis, and diagnostic framing support the story.
+\item \textbf{Narrative style}: how the dashboard uses a neutral, institutional, evidence-based policy tone.
+\item \textbf{Interaction and exploration}: how filters and subgroup views allow users to move from national indicators to targeted policy questions.
+\end{enumerate}
+
+\dashboardxref{fig:story-roadmap}
+
+\end{document}

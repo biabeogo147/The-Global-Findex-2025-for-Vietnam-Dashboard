@@ -1,0 +1,53 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\section{Chapter 8: Interaction Techniques}
+\label{sec:chapter8-interaction-techniques}
+
+\subsection{Techniques / Principles Applied}
+
+\begin{itemize}[leftmargin=*]
+\item Overview first, then filter, then details-on-demand.
+\item Coordinated views that update several visuals from the same selection.
+\item Local page-level filters instead of one global interaction state.
+\item Power BI slicers and linked visuals as the main dashboard interaction
+tools.
+\end{itemize}
+
+\subsection{How Applied in the Dashboard}
+
+The dashboard was built in Power BI and uses interaction mainly to extend a
+guided policy narrative into subgroup exploration. Users first see overview
+states on pages such as Account Ownership \& Access Landscape and Financial
+Health \& Resilience, then narrow the analysis through slicers, and finally use
+details-on-demand in the live dashboard to inspect exact values.
+
+\dashboardfigure{0.92}{fig-page3-filter-bar.png}
+{List of filters on the Account Ownership \& Access Landscape page.}
+{fig:interaction-page3-filter-bar}
+
+Figure~\ref{fig:interaction-page3-filter-bar} shows the main interaction design
+on Page 3: the page starts with a national overview, then lets users filter by
+urbanicity, income group, gender, education level, and workforce status.
+Within the live Power BI dashboard, those slicers coordinate the KPI cards, the
+Sankey diagram, and the exclusion-barrier chart so that all three reflect the
+same selected cohort.
+
+\dashboardfigure{0.82}{fig-page3-account-landscape-overview.png}
+{Default Account Ownership \& Access Landscape state visible in the static PDF export.}
+{fig:page3-interaction-states}
+
+The exported PDF confirms the placement of the filters and the default overview
+state. It also supports the claim that the dashboard uses local page-level
+interaction rather than one global control state shared across every page.
+
+\subsection{Notes / Adjustments}
+
+Because the available source is a static PDF export, this report cannot verify
+live hover tooltips, zoom behavior, animation, or the exact values produced by
+every filtered state. The chapter therefore describes the dashboard as designed
+for filtering, coordinated updates, and details-on-demand without claiming
+interactive evidence that is not directly visible in the exported file.
+
+\end{document}

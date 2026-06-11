@@ -1,0 +1,51 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\section{Chapter 3: Pre-Attentive Processing, Gestalt Principles, and Magnitude Estimation}
+\label{sec:chapter3-preattentive-gestalt}
+
+\subsection{Techniques / Principles Applied}
+
+\begin{itemize}[leftmargin=*]
+\item Pre-attentive processing through contrast, saturation, and enclosure.
+\item Gestalt grouping, especially proximity, similarity, and enclosure.
+\item Magnitude estimation that favors common baselines and linear length for
+important comparisons.
+\end{itemize}
+
+\subsection{How Applied in the Dashboard}
+
+Pre-attentive pop-out is used to direct attention before detailed reading. On
+Page 1, Figure~\ref{fig:socioeconomic-matrix} uses darker blue cells to make
+high-density income--education intersections stand out quickly. On Page 2, the
+mobile ownership chart differentiates smartphone and basic phone rates with
+strong luminance contrast, so the penetration gap is visible without a full
+label-by-label scan.
+
+\dashboardfigure{0.86}{fig-page3-kpi-cards.png}
+{The Account Ownership \& Access Landscape KPI cards.}
+{fig:account-kpi-cards}
+
+Gestalt grouping is especially visible on Page 3. Figure~\ref{fig:account-kpi-cards}
+clusters the four KPI cards closely together, so proximity signals that they
+belong to the same summary layer. Enclosure appears in the filter strip, where
+the controls are visually separated from the charts they drive.
+
+\dashboardfigure{0.92}{fig-page3-filter-bar.png}
+{Filter controls on the Account Ownership \& Access Landscape page.}
+{fig:page3-filter-bar}
+
+Magnitude estimation is handled conservatively in the comparison-heavy charts.
+The Mobile Ownership Profile and the Exclusion Friction Log rely on bar length
+and aligned baselines because those channels are more accurate for comparing
+rates than area- or angle-based alternatives.
+
+\subsection{Notes / Adjustments}
+
+The Account Composition Flow in Figure~\ref{fig:account-composition-flow} is
+less precise than a standard bar chart for direct magnitude comparison. The
+trade-off is accepted because the page needs to emphasize relationships between
+source groups and account states, not only isolated totals.
+
+\end{document}

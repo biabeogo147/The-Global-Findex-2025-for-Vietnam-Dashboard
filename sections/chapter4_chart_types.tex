@@ -1,0 +1,68 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\section{Chapter 4: Chart Types for Amounts, Distributions, Proportions, Relationships, and Trends}
+\label{sec:chapter4-chart-types}
+
+\subsection{Techniques / Principles Applied}
+
+\begin{itemize}[leftmargin=*]
+\item Matching chart types to amounts, distributions, proportions,
+relationships, and trends.
+\item Preferring readable 2D Cartesian layouts for most dashboard comparisons.
+\item Recognizing when uncertainty is not displayed and what that implies for
+interpretation.
+\end{itemize}
+
+\subsection{How Applied in the Dashboard}
+
+\dashboardfigure{0.56}{fig-page4-cash-only-reasons.png}
+{Why consumers stick to cash-only transactions.}
+{fig:cash-only-reasons}
+
+\textbf{Amounts.} Figure~\ref{fig:cash-only-reasons} uses a standard bar chart
+to compare the weighted size of cash-only barriers. This is appropriate because
+the task is simple magnitude ranking, and bar length on a common baseline makes
+the differences easy to read.
+
+\dashboardfigure{0.62}{fig-page1-population-pyramid-age-gender.png}
+{The weighted population pyramid by age and gender.}
+{fig:population-pyramid-age-gender}
+
+\textbf{Distributions.} Figure~\ref{fig:population-pyramid-age-gender} and the
+socioeconomic matrix show how the population is distributed across age, gender,
+income, and education. These views are suitable because they reveal whether the
+sample is balanced or concentrated in specific groups before later policy
+comparisons begin.
+
+\textbf{Proportions.} Figure~\ref{fig:national-inflows} uses a 100\% stacked
+bar layout to compare payment composition within each inflow type. This chart
+works well when the goal is to compare how cash, direct-to-account, and other
+channels share the same total.
+
+\textbf{Relationships.} Figure~\ref{fig:mobile-ownership-profile} uses a
+small-multiples bar design to compare ownership patterns across location,
+gender, income, and phone type. The structure avoids overplotting while still
+showing how the variables relate to one another.
+
+\textbf{Trends.} Figure~\ref{fig:save-borrow-trajectories} uses line overlays
+to show how saving and borrowing rates move across ordered income groups and
+income runway categories. The chart is effective for showing direction of
+change even though the categories are ordinal rather than continuous.
+
+Across these examples, the dashboard relies mainly on a 2D Cartesian
+coordinate system because perpendicular axes support clearer comparison than
+radial or 3D alternatives for this type of policy dashboard. Statistical
+uncertainty is not explicitly visualized, so the charts are easy to read but
+can overstate precision, especially for filtered subgroup views.
+
+\subsection{Notes / Adjustments}
+
+The 100\% stacked inflow chart emphasizes composition rather than exact
+comparison of every internal segment, so only the first segment in each row has
+a shared baseline. The save-versus-borrow lines also simplify ordinal data into
+continuous-looking trajectories, which improves readability but should be
+interpreted as directional rather than strictly continuous change.
+
+\end{document}

@@ -1,0 +1,143 @@
+\documentclass[12pt,a4paper]{article}
+
+% ------------------------------------------------------------
+% Main file for the Vietnam Financial Inclusion Dashboard report
+% Compile this file, not the subfiles.
+% The current opening.tex starts with:
+% \documentclass[../main.tex]{subfiles}
+% so this main.tex assumes opening.tex is stored in a subfolder, e.g. sections/opening.tex.
+% ------------------------------------------------------------
+
+% Page layout
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% Language and encoding
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% Math, tables, and figures
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\graphicspath{{figures/}{figures/pdf-pages/}{../figures/}}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% Lists and formatting
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{microtype}
+
+% Subfile structure
+\usepackage{subfiles}
+
+% Hyperlinks should usually be loaded near the end
+\usepackage[hidelinks]{hyperref}
+
+% Optional bibliography support.
+% If references.bib exists, it will be loaded automatically.
+\usepackage{csquotes}
+\usepackage[
+    backend=biber,
+    style=apa,
+    sorting=nyt
+]{biblatex}
+\IfFileExists{references.bib}{\addbibresource{references.bib}}{}
+
+\newcommand{\dashboardfigure}[4]{%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=#1\textwidth]{#2}
+    \caption{#3}
+    \label{#4}
+\end{figure}
+}
+
+\newcommand{\dashboardxref}[1]{%
+\par\vspace{0.45em}
+\noindent{\small\textit{See Figure~\ref{#1}.}}%
+\par\vspace{0.45em}
+}
+
+\newcommand{\dashboardplaceholder}[3]{%
+\begin{figure}[H]
+    \centering
+    \fbox{%
+        \parbox{0.82\textwidth}{%
+            \centering
+            \vspace{1.2em}
+            \textbf{Source asset unavailable in the static PDF export.}\par
+            \vspace{0.5em}
+            #3
+            \vspace{1.2em}
+        }%
+    }
+    \caption{#2}
+    \label{#1}
+\end{figure}
+}
+
+\newcommand{\storyroadmapfigure}[1]{%
+\begin{figure}[H]
+    \centering
+    \fbox{%
+        \parbox{0.9\textwidth}{%
+            \centering
+            \vspace{0.8em}
+            \Large\textbf{Context \(\rightarrow\) Readiness \(\rightarrow\) Access \(\rightarrow\) Usage \(\rightarrow\) Resilience}
+            \vspace{0.8em}
+        }%
+    }
+    \caption{Narrative roadmap of the Vietnam Financial Inclusion Dashboard.}
+    \label{#1}
+\end{figure}
+}
+
+\begin{document}
+
+\subfile{sections/frontmatter}
+
+\pagenumbering{arabic}
+\tableofcontents
+\newpage
+
+\subfile{sections/dataset_overview}
+
+\subfile{sections/dashboard_overview}
+
+\subfile{sections/chapter1_intro_dataviz}
+
+\subfile{sections/chapter2_marks_channels}
+
+\subfile{sections/chapter3_preattentive_gestalt}
+
+\subfile{sections/chapter4_chart_types}
+
+\subfile{sections/chapter6_visual_integrity}
+
+\subfile{sections/chapter8_interaction_techniques}
+
+\subfile{sections/01_opening}
+
+\subfile{sections/02_story_structure}
+
+\subfile{sections/03_storytelling_principles}
+
+\subfile{sections/04_narrative_style}
+
+\subfile{sections/05_interaction_exploration}
+
+\IfFileExists{references.bib}{%
+    \newpage
+    \printbibliography
+}
+
+\end{document}

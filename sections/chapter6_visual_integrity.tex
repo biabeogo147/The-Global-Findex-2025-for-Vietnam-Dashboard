@@ -1,0 +1,48 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\section{Chapter 6: Visual Integrity (Ink, Overlap, Color, Layout, and Annotation)}
+\label{sec:chapter6-visual-integrity}
+
+\subsection{Techniques / Principles Applied}
+
+\begin{itemize}[leftmargin=*]
+\item Proportional ink and true baselines for quantitative marks.
+\item Color choices that preserve contrast and basic accessibility.
+\item Overlap control, annotation, and data--context balance.
+\end{itemize}
+
+\subsection{How Applied in the Dashboard}
+
+The dashboard maintains proportional ink by anchoring bar charts at true zero
+baselines and by keeping bar length or flow width tied to the underlying
+weighted values. This is visible in Figure~\ref{fig:cash-only-reasons} and in
+the previously introduced account-composition Sankey.
+
+Color is used with restraint. Rural and urban comparisons rely on strong
+luminance contrast, Page 3 gender comparisons avoid low-contrast pairings, and
+the socioeconomic matrix keeps a single sequential palette so density is shown
+through intensity rather than extra hue variation.
+
+Overlap is handled through panel separation, spacing, and concise annotation.
+Dense views are broken into smaller comparison units, while reference titles,
+legends, and benchmark markers provide context without covering the data.
+
+\dashboardfigure{0.78}{fig-page3-exclusion-friction-log.png}
+{The Exclusion Friction Log: gap analysis benchmarking unbanked constraints vs. national baseline.}
+{fig:exclusion-friction-log}
+
+Figure~\ref{fig:exclusion-friction-log} is a good example of data--context
+balance because the title, legend, and reference markers explain the benchmark
+logic without burying the chart under decorative elements.
+
+\subsection{Notes / Adjustments}
+
+The National Digitization of Financial Inflows chart in
+Figure~\ref{fig:national-inflows} uses a 100\% stacked format, so only the
+first segment in each row has a common baseline. That reduces precision for the
+inner segments, but the compromise is acceptable because the page is intended
+to show composition rather than exact segment-by-segment ranking.
+
+\end{document}
