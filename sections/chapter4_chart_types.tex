@@ -11,11 +11,11 @@
 \item Matching chart types to amounts, distributions, proportions,
 relationships, and trends.
 \item Preferring readable 2D Cartesian layouts for most dashboard comparisons.
-\item Recognizing when uncertainty is not displayed and what that implies for
-interpretation.
 \end{itemize}
 
 \subsection{How Applied in the Dashboard}
+
+\subsubsection{Matching Chart Types to Analytical Questions}
 
 \dashboardfigure{0.56}{fig-page4-cash-only-reasons.png}
 {Why consumers stick to cash-only transactions.}
@@ -30,11 +30,11 @@ the differences easy to read.
 {The weighted population pyramid by age and gender.}
 {fig:population-pyramid-age-gender}
 
-\textbf{Distributions.} Figure~\ref{fig:population-pyramid-age-gender} and the
-socioeconomic matrix show how the population is distributed across age, gender,
-income, and education. These views are suitable because they reveal whether the
-sample is balanced or concentrated in specific groups before later policy
-comparisons begin.
+\textbf{Distributions.} Figure~\ref{fig:population-pyramid-age-gender} and
+Figure~\ref{fig:socioeconomic-matrix} show how the population is distributed
+across age, gender, income, and education. These views are suitable because
+they reveal whether the sample is balanced or concentrated in specific groups
+before later policy comparisons begin.
 
 \textbf{Proportions.} Figure~\ref{fig:national-inflows} uses a 100\% stacked
 bar layout to compare payment composition within each inflow type. This chart
@@ -51,18 +51,27 @@ to show how saving and borrowing rates move across ordered income groups and
 income runway categories. The chart is effective for showing direction of
 change even though the categories are ordinal rather than continuous.
 
-Across these examples, the dashboard relies mainly on a 2D Cartesian
-coordinate system because perpendicular axes support clearer comparison than
-radial or 3D alternatives for this type of policy dashboard. Statistical
-uncertainty is not explicitly visualized, so the charts are easy to read but
-can overstate precision, especially for filtered subgroup views.
+\subsubsection{Preferring Readable 2D Cartesian Layouts}
+
+Across Figures~\ref{fig:cash-only-reasons}, \ref{fig:population-pyramid-age-gender},
+\ref{fig:national-inflows}, and \ref{fig:save-borrow-trajectories}, the
+dashboard relies mainly on a 2D Cartesian coordinate system because
+perpendicular axes support clearer comparison than radial or 3D alternatives
+for this type of policy dashboard.
+
+\noindent\textit{Statistical uncertainty is not explicitly visualized, so the
+charts are easy to read but can overstate precision, especially for filtered
+subgroup views.} This matters most when the reader narrows the dashboard to a
+small cohort, because visually clear differences may look firmer than the
+survey design can guarantee without confidence intervals or sample-size cues.
 
 \subsection{Notes / Adjustments}
 
-The 100\% stacked inflow chart emphasizes composition rather than exact
+Figure~\ref{fig:national-inflows} emphasizes composition rather than exact
 comparison of every internal segment, so only the first segment in each row has
-a shared baseline. The save-versus-borrow lines also simplify ordinal data into
-continuous-looking trajectories, which improves readability but should be
-interpreted as directional rather than strictly continuous change.
+a shared baseline. Figure~\ref{fig:save-borrow-trajectories} also simplifies
+ordinal data into continuous-looking trajectories, which improves readability
+but should be interpreted as directional rather than strictly continuous
+change.
 
 \end{document}

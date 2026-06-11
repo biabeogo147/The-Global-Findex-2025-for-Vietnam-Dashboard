@@ -20,9 +20,20 @@ primary source of exact comparison.
 
 \subsection{How Applied in the Dashboard}
 
-The dashboard aligns each page with the variable types and comparison task it
-needs to support. Table~\ref{tab:marks-channels-summary} summarizes the main
-encodings used across the five pages.
+\subsubsection{Classifying Variables Before Encoding}
+
+The dashboard first separates variables by role before assigning any visual
+form. Income quintile and education in Figure~\ref{fig:socioeconomic-matrix}
+are treated as ordered categories, payment channels in
+Figure~\ref{fig:national-inflows} are treated as nominal classes within each
+inflow type, and rates or weighted shares across
+Figures~\ref{fig:mobile-ownership-profile} and
+\ref{fig:save-borrow-trajectories} are treated as quantitative values. That
+classification step determines whether the page should emphasize comparison,
+composition, structure, or directional change.
+
+Table~\ref{tab:marks-channels-summary} summarizes the main encodings used
+across the five pages.
 
 \begin{table}[H]
 \centering
@@ -73,22 +84,46 @@ Page 5 save vs. borrow trajectories & Income group, income runway, save rate, bo
         \caption{By income runway length.}
         \label{fig:save-borrow-income-runway}
     \end{subfigure}
-    \caption{Save vs. borrow percentage overlays.}
-    \label{fig:save-borrow-trajectories}
+\caption{Save vs. borrow percentage overlays.}
+\label{fig:save-borrow-trajectories}
 \end{figure}
 
-These examples show the dashboard's encoding logic in practice: Page 1 uses a
-matrix to compare ordered categories, Page 2 uses small-multiples bars for
-precise subgroup comparisons, Page 3 uses a Sankey to emphasize structural
-flows, Page 4 uses segmented bars for composition, and Page 5 uses line
-overlays to highlight directional change across ordered groups.
+\subsubsection{Selecting Marks for the Analytical Task}
+
+The chosen marks follow the main question on each page. Figure~\ref{fig:socioeconomic-matrix}
+uses matrix cells to compare ordered categorical intersections, Figure~\ref{fig:mobile-ownership-profile}
+uses grouped bars for subgroup rate comparison, Figure~\ref{fig:account-composition-flow}
+uses ribbons and nodes to emphasize movement between account states,
+Figure~\ref{fig:national-inflows} uses segmented bars for within-category
+composition, and Figure~\ref{fig:save-borrow-trajectories} uses line overlays
+to highlight directional change across ordered groups.
+
+\subsubsection{Prioritizing Position and Length for Exact Comparison}
+
+Where precise reading matters most, the dashboard relies on aligned position
+and length. Figure~\ref{fig:mobile-ownership-profile} makes subgroup gaps easy
+to compare because all bars share common baselines, while
+Figure~\ref{fig:national-inflows} lets readers compare the dominant payment
+mode within each inflow category. Even in Figure~\ref{fig:socioeconomic-matrix},
+ordered row and column position do the main structural work before color is
+used to show density.
+
+\subsubsection{Using Supporting Channels Carefully}
+
+Supporting channels are kept secondary to the main quantitative comparison.
+Figure~\ref{fig:socioeconomic-matrix} uses sequential blue intensity to signal
+weighted density, Figure~\ref{fig:account-composition-flow} uses ribbon width
+and grouped color to organize structural flows, and
+Figure~\ref{fig:save-borrow-trajectories} uses hue to distinguish saving from
+borrowing once the reader has already located the values by position.
 
 \subsection{Notes / Adjustments}
 
-The Sankey on Page 3 sacrifices some magnitude precision because ribbon width is
-less exact than bar length, but it better communicates movement between account
-states. On Page 5, the line overlays connect ordinal categories, so they imply
-continuity more than a strict categorical display would; the choice is kept to
-make change in save-versus-borrow behavior easier to track.
+Figure~\ref{fig:account-composition-flow} sacrifices some magnitude precision
+because ribbon width is less exact than bar length, but it better communicates
+movement between account states. Figure~\ref{fig:save-borrow-trajectories}
+connects ordinal categories, so it implies continuity more than a strict
+categorical display would; the choice is kept to make change in
+save-versus-borrow behavior easier to track.
 
 \end{document}
