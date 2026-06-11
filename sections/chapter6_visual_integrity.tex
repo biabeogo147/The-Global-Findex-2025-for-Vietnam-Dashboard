@@ -10,7 +10,9 @@
 \begin{itemize}[leftmargin=*]
 \item Proportional ink and true baselines for quantitative marks.
 \item Color choices that preserve contrast and basic accessibility.
-\item Overlap control, annotation, and data--context balance.
+\item Overlap control through structural separation, spacing, and layout.
+\item Data--context balance and annotation grammar that clarify interpretation
+without adding chartjunk.
 \end{itemize}
 
 \subsection{How Applied in the Dashboard}
@@ -32,20 +34,34 @@ variation, while \figref{fig:national-inflows}{National inflow digitization}
 uses a limited set of contrasting fills to separate payment channels without
 turning the page into a saturated categorical display.
 
-\subsubsection{Overlap, Annotation, and Data--Context Balance}
+\subsubsection{Managing Overplotting and Graphical Overlap}
 
-Overlap is handled through panel separation, spacing, and concise annotation.
-Dense views are broken into smaller comparison units, while reference titles,
-legends, and benchmark markers provide context without covering the data.
+To keep dense comparisons readable, the dashboard separates marks instead of
+forcing too many categories into a single crowded frame.
 
 \dashboardfigure{0.78}{fig-page3-exclusion-friction-log.png}
 {The Exclusion Friction Log: gap analysis benchmarking unbanked constraints vs. national baseline.}
 {fig:exclusion-friction-log}
 
-\figref{fig:exclusion-friction-log}{Exclusion friction log} is a good example
-of data--context balance because the title, legend, and reference markers
-explain the benchmark logic without burying the chart under decorative
-elements.
+\figref{fig:mobile-ownership-profile}{Mobile ownership profile} splits the
+ownership analysis into small multiples, so each subgroup comparison stays
+scannable rather than collapsing into overlapping grouped bars.
+\figref{fig:national-inflows}{National inflow digitization} and
+\figref{fig:exclusion-friction-log}{Exclusion friction log} both use generous
+row spacing, which prevents labels, benchmark markers, and adjacent bars from
+colliding. On Page 3, \figref{fig:account-composition-flow}{Account composition flow}
+also reduces visual clutter by grouping and ordering ribbons into readable
+streams instead of a tangled crossover pattern.
+
+\subsubsection{Data--Context Balance and Annotation Grammar}
+
+Data marks are not presented in isolation. Titles, subtitles, legends, and
+benchmark cues explain what is being compared and how the reader should
+interpret the result without competing with the data itself.
+\figref{fig:exclusion-friction-log}{Exclusion friction log} is the clearest
+example: the benchmark line, legend, and direct barrier labels let the reader
+compare a filtered subgroup against the national rate in the same frame, so
+context supports the analysis instead of overwhelming it.
 
 \subsection{Notes / Adjustments}
 

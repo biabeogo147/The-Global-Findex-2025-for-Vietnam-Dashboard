@@ -10,7 +10,6 @@
 \begin{itemize}[leftmargin=*]
 \item Overview first, then filter, then details-on-demand.
 \item Coordinated views that update several visuals from the same selection.
-\item Local page-level filters instead of one global interaction state.
 \item Power BI slicers and linked visuals as the main dashboard interaction
 tools.
 \end{itemize}
@@ -29,7 +28,7 @@ states on pages such as Account Ownership \& Access Landscape and Financial
 Health \& Resilience, then narrow the analysis through slicers, and finally use
 details-on-demand in the live dashboard to inspect exact values. The overview
 state is visible in \figref{fig:page3-interaction-states}{Page 3 default account-access state}, while the
-presence of the page-level controls is visible in
+presence of the slicer controls is visible in
 \figref{fig:interaction-page3-filter-bar}{Page 3 filter controls}.
 
 \subsubsection{Coordinated Views That Update from One Selection}
@@ -54,31 +53,25 @@ also reduces the income-gender chart to the selected subgroup and rebalances
 the Sankey and exclusion-barrier views to the same cohort, which is exactly the
 behavior expected from linked Power BI visuals.
 
-\subsubsection{Local Page-Level Filters}
+\subsubsection{Power BI Slicers and Linked Visuals}
 
 \dashboardfigure{0.86}{fig-page5-filter-bar.png}
 {Filter controls on the Financial Health \& Resilience page.}
 {fig:page5-filter-bar}
 
-The exported PDF confirms the placement of the filters and the default overview
-state. It also supports the claim that the dashboard uses local page-level
-interaction rather than one global control state shared across every page. That
-same design pattern reappears on the resilience page through
-\figref{fig:page5-filter-bar}{Page 5 filter controls}, where the filter strip is embedded directly
-inside the Page 5 analysis space instead of being detached as a report-wide
-control layer.
-
-\subsubsection{Power BI Slicers and Linked Visuals}
+The main interaction tool is Power BI itself, not LaTeX. LaTeX only documents
+the dashboard through static figures, while Power BI provides the slicers,
+linked visuals, and details-on-demand behavior described in this chapter. The
+figures therefore demonstrate interaction design intent and control placement.
+\figref{fig:page5-filter-bar}{Page 5 filter controls} shows that the resilience
+page uses the same embedded Power BI slicer pattern already visible in
+\figref{fig:interaction-page3-filter-bar}{Page 3 filter controls}.
 
 \dashboardfigure{0.72}{fig-page3-hover-tooltip.png}
 {Hover tooltip on the Page 3 Sankey flow.}
 {fig:page3-hover-tooltip}
 
-The main interaction tool is Power BI itself, not LaTeX. LaTeX only documents
-the dashboard through static figures, while Power BI provides the slicers,
-linked visuals, and details-on-demand behavior described in this chapter. The
-figures therefore demonstrate interaction design intent and control placement.
-\figref{fig:page3-hover-tooltip}{Page 3 hover tooltip} additionally confirms a true
+\figref{fig:page3-hover-tooltip}{Page 3 hover tooltip} then confirms a true
 details-on-demand behavior on Page 3: hovering over a Sankey branch reveals the
 context fields \textit{Location = Rural}, \textit{Account Ecosystem Type =
 Traditional Bank Only}, and \textit{Total Weighted Population = 12}. That is
@@ -87,13 +80,13 @@ dashboard exposes exact values and category context interactively.
 
 \subsection{Notes / Adjustments}
 
-The available evidence now goes beyond the static PDF because Page 3 includes a
-verified filtered state in \figref{fig:page3-subgroup-state}{Page 3 filtered subgroup state}
-and a verified hover tooltip in \figref{fig:page3-hover-tooltip}{Page 3 hover tooltip}.
-However, the
-report still does not verify zoom behavior, animation, or equivalent live
-interaction evidence for every other page. The chapter therefore makes direct
-claims only where screenshots show the interaction explicitly, and keeps the
-remaining interaction language appropriately bounded.
+The available evidence now goes beyond the static PDF because the report
+includes a verified filtered state in \figref{fig:page3-subgroup-state}{Page 3 filtered subgroup state},
+a verified hover tooltip in \figref{fig:page3-hover-tooltip}{Page 3 hover tooltip},
+and an additional slicer screenshot in \figref{fig:page5-filter-bar}{Page 5 filter controls}.
+However, the report still does not verify zoom behavior, animation, or
+equivalent live interaction evidence for every other page. The chapter
+therefore makes direct claims only where screenshots show the interaction
+explicitly, and keeps the remaining interaction language appropriately bounded.
 
 \end{document}
