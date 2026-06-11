@@ -61,9 +61,11 @@
 \end{figure}
 }
 
-\newcommand{\dashboardxref}[1]{%
+\newcommand{\figref}[2]{\textit{Figure~\ref{#1}: #2}}
+
+\newcommand{\dashboardxref}[2]{%
 \par\vspace{0.45em}
-\noindent{\small\textit{See Figure~\ref{#1}.}}%
+\noindent{\small See \figref{#1}{#2}.}%
 \par\vspace{0.45em}
 }
 

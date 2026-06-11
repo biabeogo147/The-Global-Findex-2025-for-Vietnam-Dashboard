@@ -4,38 +4,120 @@
 
 \subsection{Role of Visualization in the Problem}
 
-The raw dataset in \texttt{Findex\_Microdata\_2025\_updateViet Nam.csv}
-contains 1,000 rows and 199 columns of survey responses. In raw tabular form,
-the links between demographics, digital readiness, account access, payment
-behavior, and resilience are difficult to compare quickly. Visualization makes
-that structure readable by translating weighted responses into ordered marks
-such as cells, bars, flows, and lines, so the report can show where exclusion
-and cash dependence are concentrated.
+The Vietnam Financial Inclusion Dashboard 2025 is designed as an institutional,
+five-page interactive policy workspace. Its structure converts 1,000
+high-dimensional, weight-adjusted individual records from
+\texttt{Findex\_Microdata\_2025\_updateViet Nam.csv} into five connected
+thematic layers. That design allows the reader to isolate structural
+inequalities, trace transaction flows, and diagnose exclusion barriers across
+the Vietnamese financial ecosystem.
 
 \dashboardfigure{0.97}{fig-page1-overview.png}
-{Overview of the Vietnam Financial Inclusion Dashboard.}
+{Page 1 overview: the macro-socioeconomic baseline.}
 {fig:dashboard-overview}
 
-Figure~\ref{fig:dashboard-overview} shows how the dashboard reorganizes the
-problem into one policy-facing analytical flow rather than a long list of
-separate indicators. This matters because the report is not only asking
-whether adults have accounts, but whether readiness, access, usage, and
-resilience line up or break apart across social groups.
+\figref{fig:dashboard-overview}{Page 1 macro-socioeconomic baseline}. The
+dashboard begins with a demographic and structural baseline. This page presents
+country-level KPI cards such as urban concentration, secondary education
+thresholds, and workforce participation, together with cross-tabulated
+population views. It appears first because later financial indicators only make
+sense when read against the country's underlying social composition.
+
+\dashboardfigure{0.97}{fig-page2-connectivity-overview.png}
+{Page 2 overview: connectivity and digital readiness.}
+{fig:page2-connectivity-overview}
+
+\figref{fig:page2-connectivity-overview}{Page 2 connectivity overview}. After
+the demographic baseline is established, the dashboard moves to connectivity
+and digital readiness. This page tracks internet-use depth, smartphone
+ownership, and foundational versus online identity coverage so the reader can
+determine whether weak financial participation begins as an infrastructure
+problem or persists despite high digital access.
+
+\dashboardfigure{0.82}{fig-page3-account-landscape-overview.png}
+{Page 3 overview: the default account-ownership and access state.}
+{fig:page3-interaction-states}
+
+\figref{fig:page3-interaction-states}{Page 3 default account-access state}. The
+narrative then moves to the account ownership and access landscape. This page
+reports formal banking and mobile money inclusion, shows how rural and urban
+groups distribute across banking tiers, and benchmarks the concrete frictions
+faced by the unbanked. It marks the transition from technical readiness to
+formal institutional inclusion.
+
+\dashboardfigure{0.97}{fig-page4-cash-flows-overview.png}
+{Page 4 overview: cash flows and digitization vectors.}
+{fig:page4-cash-flow-overview}
+
+\figref{fig:page4-cash-flow-overview}{Page 4 cash-flow overview}. The next
+step tests whether account access actually changes daily transaction behavior.
+This page compares cash versus digital delivery across wages, agricultural
+sales, transfers, utility payments, and merchant transactions. It helps the
+reader move beyond access rates and ask whether account holders remain trapped
+in cash-heavy routines.
+
+\dashboardfigure{0.92}{fig-page5-resilience-overview.png}
+{Page 5 overview: financial health and resilience.}
+{fig:page5-resilience-overview}
+
+\figref{fig:page5-resilience-overview}{Page 5 resilience overview}. The final
+page brings the earlier layers together by asking how households cope with
+economic shocks. It connects demographics, technology, access, and transaction
+behavior to measures of saving, borrowing, and emergency coping channels. This
+page is placed last because financial resilience can only be interpreted after
+the structural and behavioral context is already clear.
 
 \subsection{Types of Visualization Used}
 \label{sec:dashboard-overview}
 
-The dashboard combines explanatory and exploratory visualization. The
-explanatory role appears in the fixed five-page sequence shown in
-Figure~\ref{fig:dashboard-overview}: Page 1 establishes the demographic
-baseline, Page 2 checks connectivity and digital identity, Page 3 examines
-account ownership and exclusion barriers, Page 4 compares cash and digital
-transaction flows, and Page 5 links financial access with saving, borrowing,
-and coping capacity.
+The dashboard uses a hybrid visualization strategy to match the needs of
+policy analysts, development researchers, and decision-makers who need both a
+clear narrative and the ability to test subgroup conditions directly.
 
-The exploratory role appears through Power BI filters that let readers inspect
-particular subgroups without leaving that broader narrative. This hybrid
-structure is appropriate for a policy audience because it keeps the national
-story coherent while still supporting diagnosis at subgroup level.
+The explanatory layer functions as an anchored narrative. Its fixed five-page
+sequence guides the reader through one policy argument: genuine financial
+inclusion cannot be evaluated by account access alone, but must be assessed
+through structural context, digital readiness, transaction behavior, and
+household resilience. National benchmarks, large labels, and stable page order
+keep that storyline legible from beginning to end.
+
+The exploratory layer gives the user room to depart from the national story and
+investigate specific demographic conditions. Page-level Power BI filters on
+Page 3 and Page 5, together with hover tooltips and linked visual updates, let
+the reader ask more precise questions about rural disadvantage, gender gaps, or
+income-based exclusion without leaving the broader policy frame.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{0.92\textwidth}{p{0.23\textwidth}X}
+\toprule
+\textbf{Typology} & \textbf{Characteristics} \\
+\midrule
+Explanatory layer & Fixed five-page narrative; static national benchmarks;
+curated policy-facing layout. \\
+Exploratory layer & Dynamic multi-criteria slicers; user-led demographic
+drill-downs; interactive details-on-demand. \\
+\bottomrule
+\end{tabularx}
+\caption{Hybrid explanatory and exploratory typology used in the dashboard.}
+\label{tab:visualization-typology}
+\end{table}
+
+\dashboardfigure{0.88}{fig-page3-subgroup-rural-female-poorest20.png}
+{Page 3 filtered state for the subgroup Rural + Female + Poorest 20\%.}
+{fig:page3-subgroup-state}
+
+Traditional visualization theory often recommends separating exploratory tools
+from explanatory presentation so that the user is not pulled away from the main
+story too early. This dashboard deliberately relaxes that rule by embedding
+multi-criteria filters directly inside the narrative workspace, especially on
+\figref{fig:page3-subgroup-state}{Page 3 filtered subgroup state}. That choice
+is justified because financial inclusion is inherently intersectional:
+policymakers need to isolate cohorts such as rural low-income women and then
+observe how the exclusion profile changes relative to the national baseline.
+The combination of explanatory sequencing and exploratory filtering therefore
+makes the dashboard more useful for real policy diagnosis than either approach
+would be on its own.
 
 \end{document}

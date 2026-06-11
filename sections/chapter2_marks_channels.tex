@@ -23,51 +23,47 @@ primary source of exact comparison.
 \subsubsection{Classifying Variables Before Encoding}
 
 The dashboard first separates variables by role before assigning any visual
-form. Income quintile and education in Figure~\ref{fig:socioeconomic-matrix}
-are treated as ordered categories, payment channels in
-Figure~\ref{fig:national-inflows} are treated as nominal classes within each
-inflow type, and rates or weighted shares across
-Figures~\ref{fig:mobile-ownership-profile} and
-\ref{fig:save-borrow-trajectories} are treated as quantitative values. That
-classification step determines whether the page should emphasize comparison,
-composition, structure, or directional change.
-
-Table~\ref{tab:marks-channels-summary} summarizes the main encodings used
-across the five pages.
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabularx}{\textwidth}{p{0.16\textwidth}p{0.23\textwidth}p{0.24\textwidth}X}
-\toprule
-\textbf{Chart/Page} & \textbf{Variables} & \textbf{Marks / channels} & \textbf{Why appropriate} \\
-\midrule
-Page 1 socioeconomic matrix & Income quintile, education, survey weight & Grid cells; row and column position; sequential color intensity & Two ordered categorical variables form a discrete matrix, while weighted population density is conveyed by ordered color. \\
-Page 2 mobile ownership profile & Location, gender, income group, phone type, access rate & Bars; aligned length; grouped position; hue & Bar length supports accurate rate comparison across small multiples and hue separates phone types without changing the baseline. \\
-Page 3 account composition flow & Location, account state, weighted volume & Sankey nodes and ribbons; horizontal position; ribbon width; color grouping & The chart emphasizes how groups move between account states, which is more important here than exact pairwise magnitude reading. \\
-Page 4 inflow digitization & Inflow type, payment modality, percentage share & Segmented bars; aligned position; segment length; hue & A 100\% stacked bar makes composition comparable across wages, agriculture, transfers, and other inflows. \\
-Page 5 save vs. borrow trajectories & Income group, income runway, save rate, borrow rate & Lines; vertical position; color & The line overlays help readers track directional change across ordered categories. \\
-\bottomrule
-\end{tabularx}
-\caption{Main marks, channels, and encoding rationale used in the dashboard.}
-\label{tab:marks-channels-summary}
-\end{table}
+form.
 
 \dashboardfigure{0.72}{fig-page1-socioeconomic-matrix.png}
 {The socioeconomic matrix (income vs. education).}
 {fig:socioeconomic-matrix}
 
+\figref{fig:socioeconomic-matrix}{Socioeconomic matrix} treats income quintile
+and education as ordered categories and uses grid cells positioned by row and
+column to compare their intersections. Weighted population density is then
+encoded through a sequential blue scale, which is appropriate because the page
+needs to reveal concentration patterns rather than only isolated totals.
+
 \dashboardfigure{0.82}{fig-page2-mobile-ownership.png}
 {Mobile ownership rate by location, phone type, gender, and income group.}
 {fig:mobile-ownership-profile}
+
+\figref{fig:mobile-ownership-profile}{Mobile ownership profile} combines
+subgroup categories such as location, gender, and income group with phone type
+and access rate. Grouped bars and aligned lengths support accurate comparison
+across small multiples, while hue separates basic phones from smartphones
+without changing the baseline used for quantitative reading.
 
 \dashboardfigure{0.72}{fig-page3-account-flow.png}
 {The account composition flow.}
 {fig:account-composition-flow}
 
+\figref{fig:account-composition-flow}{Account composition flow} treats location
+and account ecosystem type as nominal structural states connected by flows.
+Nodes, horizontal position, ribbon width, and grouped color are used to show
+how the population distributes across account conditions, which is more
+important on this page than exact pairwise magnitude reading.
+
 \dashboardfigure{0.88}{fig-page4-inflows.png}
 {The national digitization of financial inflows: cash vs. digital delivery.}
 {fig:national-inflows}
+
+\figref{fig:national-inflows}{National inflow digitization} treats inflow type
+as nominal categories and payment method as composition within each category.
+The segmented 100\% stacked bars use aligned position and segment length to
+show how wages, sales, pensions, and transfers split across cash,
+direct-to-account, and other methods.
 
 \begin{figure}[H]
     \centering
@@ -88,42 +84,61 @@ Page 5 save vs. borrow trajectories & Income group, income runway, save rate, bo
 \label{fig:save-borrow-trajectories}
 \end{figure}
 
+\figref{fig:save-borrow-trajectories}{Save vs. borrow trajectories} treats
+income group and income runway as ordered categories, while save and borrow
+rates are quantitative values. Vertical position carries the main comparison
+and hue separates the two behaviors, making directional change across ordered
+groups easier to track.
+
 \subsubsection{Selecting Marks for the Analytical Task}
 
-The chosen marks follow the main question on each page. Figure~\ref{fig:socioeconomic-matrix}
-uses matrix cells to compare ordered categorical intersections, Figure~\ref{fig:mobile-ownership-profile}
-uses grouped bars for subgroup rate comparison, Figure~\ref{fig:account-composition-flow}
-uses ribbons and nodes to emphasize movement between account states,
-Figure~\ref{fig:national-inflows} uses segmented bars for within-category
-composition, and Figure~\ref{fig:save-borrow-trajectories} uses line overlays
-to highlight directional change across ordered groups.
+The chosen marks follow the main question on each page.
+\figref{fig:socioeconomic-matrix}{Socioeconomic matrix} uses matrix cells to
+compare ordered categorical intersections,
+\figref{fig:mobile-ownership-profile}{Mobile ownership profile} uses grouped
+bars for subgroup rate comparison,
+\figref{fig:account-composition-flow}{Account composition flow} uses ribbons
+and nodes to emphasize movement between account states,
+\figref{fig:national-inflows}{National inflow digitization} uses segmented bars
+for within-category composition, and
+\figref{fig:save-borrow-trajectories}{Save vs. borrow trajectories} uses line
+overlays to highlight directional change across ordered groups.
 
 \subsubsection{Prioritizing Position and Length for Exact Comparison}
 
 Where precise reading matters most, the dashboard relies on aligned position
-and length. Figure~\ref{fig:mobile-ownership-profile} makes subgroup gaps easy
-to compare because all bars share common baselines, while
-Figure~\ref{fig:national-inflows} lets readers compare the dominant payment
-mode within each inflow category. Even in Figure~\ref{fig:socioeconomic-matrix},
-ordered row and column position do the main structural work before color is
-used to show density.
+and length. \figref{fig:mobile-ownership-profile}{Mobile ownership profile}
+makes subgroup gaps easy to compare because all bars share common baselines,
+while \figref{fig:national-inflows}{National inflow digitization} lets readers
+compare the dominant payment mode within each inflow category. Even in
+\figref{fig:socioeconomic-matrix}{Socioeconomic matrix}, ordered row and column
+position do the main structural work before color is used to show density.
 
 \subsubsection{Using Supporting Channels Carefully}
 
 Supporting channels are kept secondary to the main quantitative comparison.
-Figure~\ref{fig:socioeconomic-matrix} uses sequential blue intensity to signal
-weighted density, Figure~\ref{fig:account-composition-flow} uses ribbon width
-and grouped color to organize structural flows, and
-Figure~\ref{fig:save-borrow-trajectories} uses hue to distinguish saving from
-borrowing once the reader has already located the values by position.
+\figref{fig:socioeconomic-matrix}{Socioeconomic matrix} uses sequential blue
+intensity to signal weighted density,
+\figref{fig:account-composition-flow}{Account composition flow} uses ribbon
+width and grouped color to organize structural flows, and
+\figref{fig:save-borrow-trajectories}{Save vs. borrow trajectories} uses hue
+to distinguish saving from borrowing once the reader has already located the
+values by position.
 
 \subsection{Notes / Adjustments}
 
-Figure~\ref{fig:account-composition-flow} sacrifices some magnitude precision
-because ribbon width is less exact than bar length, but it better communicates
-movement between account states. Figure~\ref{fig:save-borrow-trajectories}
-connects ordinal categories, so it implies continuity more than a strict
-categorical display would; the choice is kept to make change in
-save-versus-borrow behavior easier to track.
+On Page 5, \figref{fig:save-borrow-trajectories}{Save vs. borrow trajectories}
+plots rates with a line-chart layout across ordered income quintiles and income
+runway categories. Strict visualization theory usually reserves continuous
+lines for truly continuous or time-series data, so connecting ordinal groups
+can imply intermediate values that do not actually exist.
+
+This dashboard keeps the line marks deliberately because they exploit spatial
+continuity to make the behavioral trajectory easier to read. The lines show
+that saving rises while borrowing falls as economic position improves, and that
+contrast would be less legible in a denser bar-based layout. The adjustment is
+therefore a controlled trade-off: it relaxes strict categorical encoding in
+order to reveal the structural crossover between two financial strategies more
+clearly.
 
 \end{document}

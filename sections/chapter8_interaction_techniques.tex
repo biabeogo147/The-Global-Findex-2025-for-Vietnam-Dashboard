@@ -19,38 +19,33 @@ tools.
 
 \subsubsection{Overview First, Then Filter, Then Details-on-Demand}
 
+\dashboardfigure{0.92}{fig-page3-filter-bar.png}
+{List of filters on the Account Ownership \& Access Landscape page.}
+{fig:interaction-page3-filter-bar}
+
 The dashboard was built in Power BI and uses interaction mainly to extend a
 guided policy narrative into subgroup exploration. Users first see overview
 states on pages such as Account Ownership \& Access Landscape and Financial
 Health \& Resilience, then narrow the analysis through slicers, and finally use
 details-on-demand in the live dashboard to inspect exact values. The overview
-state is visible in Figure~\ref{fig:page3-interaction-states}, while the
+state is visible in \figref{fig:page3-interaction-states}{Page 3 default account-access state}, while the
 presence of the page-level controls is visible in
-Figure~\ref{fig:interaction-page3-filter-bar}.
-
-\dashboardfigure{0.92}{fig-page3-filter-bar.png}
-{List of filters on the Account Ownership \& Access Landscape page.}
-{fig:interaction-page3-filter-bar}
+\figref{fig:interaction-page3-filter-bar}{Page 3 filter controls}.
 
 \subsubsection{Coordinated Views That Update from One Selection}
 
-Figure~\ref{fig:interaction-page3-filter-bar} shows the main interaction design
+\figref{fig:interaction-page3-filter-bar}{Page 3 filter controls} shows the
+main interaction design
 on Page 3: the page starts with a national overview, then lets users filter by
 urbanicity, income group, gender, education level, and workforce status.
 Within the live Power BI dashboard, those slicers coordinate the views in
-Figures~\ref{fig:account-kpi-cards},
-\ref{fig:account-composition-flow}, and \ref{fig:exclusion-friction-log} so
-that all three reflect the same selected cohort.
+\figref{fig:account-kpi-cards}{Page 3 KPI cards},
+\figref{fig:account-composition-flow}{Account composition flow}, and
+\figref{fig:exclusion-friction-log}{Exclusion friction log} so that all three
+reflect the same selected cohort.
 
-\dashboardfigure{0.82}{fig-page3-account-landscape-overview.png}
-{Default Account Ownership \& Access Landscape state visible in the static PDF export.}
-{fig:page3-interaction-states}
-
-\dashboardfigure{0.88}{fig-page3-subgroup-rural-female-poorest20.png}
-{Filtered Page 3 state for the subgroup Rural + Female + Poorest 20\%.}
-{fig:page3-subgroup-state}
-
-Figure~\ref{fig:page3-subgroup-state} provides direct evidence that coordinated
+\figref{fig:page3-subgroup-state}{Page 3 filtered subgroup state} provides
+direct evidence that coordinated
 updates occur on Page 3 after a subgroup selection. When the dashboard is
 filtered to Rural + Female + Poorest 20\%, the KPI cards update to Banking
 Inclusion \(41.19\%\), Financial Institution Account \(41.19\%\), Mobile Money
@@ -61,36 +56,41 @@ behavior expected from linked Power BI visuals.
 
 \subsubsection{Local Page-Level Filters}
 
+\dashboardfigure{0.86}{fig-page5-filter-bar.png}
+{Filter controls on the Financial Health \& Resilience page.}
+{fig:page5-filter-bar}
+
 The exported PDF confirms the placement of the filters and the default overview
 state. It also supports the claim that the dashboard uses local page-level
 interaction rather than one global control state shared across every page. That
 same design pattern reappears on the resilience page through
-Figure~\ref{fig:page5-filter-bar}, where the filter strip is embedded directly
+\figref{fig:page5-filter-bar}{Page 5 filter controls}, where the filter strip is embedded directly
 inside the Page 5 analysis space instead of being detached as a report-wide
 control layer.
 
 \subsubsection{Power BI Slicers and Linked Visuals}
 
+\dashboardfigure{0.72}{fig-page3-hover-tooltip.png}
+{Hover tooltip on the Page 3 Sankey flow.}
+{fig:page3-hover-tooltip}
+
 The main interaction tool is Power BI itself, not LaTeX. LaTeX only documents
 the dashboard through static figures, while Power BI provides the slicers,
 linked visuals, and details-on-demand behavior described in this chapter. The
 figures therefore demonstrate interaction design intent and control placement.
-Figure~\ref{fig:page3-hover-tooltip} additionally confirms a true
+\figref{fig:page3-hover-tooltip}{Page 3 hover tooltip} additionally confirms a true
 details-on-demand behavior on Page 3: hovering over a Sankey branch reveals the
 context fields \textit{Location = Rural}, \textit{Account Ecosystem Type =
 Traditional Bank Only}, and \textit{Total Weighted Population = 12}. That is
 stronger evidence than a static export alone, because it shows that the live
 dashboard exposes exact values and category context interactively.
 
-\dashboardfigure{0.72}{fig-page3-hover-tooltip.png}
-{Hover tooltip on the Page 3 Sankey flow.}
-{fig:page3-hover-tooltip}
-
 \subsection{Notes / Adjustments}
 
 The available evidence now goes beyond the static PDF because Page 3 includes a
-verified filtered state in Figure~\ref{fig:page3-subgroup-state} and a
-verified hover tooltip in Figure~\ref{fig:page3-hover-tooltip}. However, the
+verified filtered state in \figref{fig:page3-subgroup-state}{Page 3 filtered subgroup state}
+and a verified hover tooltip in \figref{fig:page3-hover-tooltip}{Page 3 hover tooltip}.
+However, the
 report still does not verify zoom behavior, animation, or equivalent live
 interaction evidence for every other page. The chapter therefore makes direct
 claims only where screenshots show the interaction explicitly, and keeps the

@@ -1,0 +1,15 @@
+The dashboard uses a hybrid approach to match the needs of development economists and central bank planners: 
+Explanatory Typology (The Anchored Narrative): The dashboard functions as a structured policy brief. It uses a strict top-down layout that guides the reader through five distinct pages, building a core argument: to evaluate true financial inclusion, we must look beyond basic account ownership and analyze actual technology readiness, daily transaction habits, and household economic resilience. The sequence is fixed, the major takeaways are highlighted with clear data labels, and reference lines provide national benchmarks to keep the user anchored in the core story. 
+Exploratory Typology (User-Led Discovery): At the same time, the dashboard includes robust interactive features, such as the global drop-down filters on Page 3. These allow users to break away from the main narrative and investigate specific questions, such as: "What specific institutional barriers keep low-income rural citizens out of the banking system?" Users can manipulate the data canvas directly, using tooltips to view detailed metrics on demand. 
+
+Table:
+Typology		Characteristics
+Explantory layer	Fixed 5-page vertical narrative
+			Static national benchmarks
+			Curated structual typography
+Exploratory layer	Dynamic multi-criteria slicers
+			User-led demographic drilldowns
+			Interactive details-on-demand
+
+Traditional data visualization theory often suggests keeping exploratory discovery tools separate from explanatory presentation dashboards to avoid confusing the user. However, this dashboard deliberately breaks that rule by embedding complex multi-criteria filters directly into the presentation layout on Page 3. 
+This adjustment was made because financial inclusion is inherently intersectional. A static chart showing an average barrier rate is not enough for an active policymaker. To design effective regulations, an analyst must be able to instantly filter the data - such as isolating citizens who are out of the workforce - and watch the Exclusion Friction Log dynamically recalculate their specific obstacles against the national baseline. Combining both exploratory and explanatory elements into a single workspace makes the dashboard a far more effective tool for diagnosing and solving real-world policy challenges. 
